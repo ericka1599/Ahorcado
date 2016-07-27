@@ -1,29 +1,35 @@
-#Usar pickle para crear el archivo y luego leerlo? ¯ǀ⁄∕ ¯°˘ˆˉ•—|
+# ¯ǀ⁄∕ ¯°˘ˆˉ•—|
 import random
-def palabra (lista):
-	palabra = open ("palabras.txt" , 'rb')
-	pa = palabra.random
-	print (pa)
+from lipalabras import lipalabras
+def palabra (palabras):
+	palabra = palabra.random
+
+def guiones (palabra):
+	for guiones in palabra
+		guiones = "_"
 
 def ahorcado (errores):
+	muere = False
 	while errores < 7:
 		muere = False 
 	else:
 		muere = True
 		return "Perdiste"
-		des = int(input("1. Volver a jugar" '∕n' "2. Salir"))
+		des = int(input("1. Volver a jugar" '\n' "2. Salir"))
 		if des = 1:
 			muere = True
-
+		else: 
+			print ("Adios ☺")
 def intentos (errores):
 	if intento != letra
 
 def hombresito (errores):
-	pa1= " ———————"
-	pa2 = "ǀ" '\n'  "ǀ" '\n'  "ǀ" '\n'  "ǀ" 
+	mu =[" ———————"  "ǀ" '\n'  "ǀ" '\n'  "ǀ" '\n'  "ǀ" , "(•˛•)" , "¦" '\n' "¦" , "―" , "―" , "┘", "└"  ] 
+	
+	print (mu)
 
 	 ———————
 	ǀ    (•˛•)
-	ǀ     \¦∕
-	ǀ
-	ǀ
+	ǀ     ―¦―
+	ǀ      ¦
+	ǀ     ┘ └
