@@ -1,12 +1,33 @@
-# ¯ǀ⁄∕ ¯°˘ˆˉ•—|
 import random
-from lipalabras import lipalabras
+import lipalabras
 def palabra (palabras):
-	palabra = palabra.random
+	palabra = palabras.random
 
-def guiones (palabra):
-	for guiones in palabra
-		guiones = "_"
+def guiones ():
+	guiones = []
+	for i in palabra(len(palabra)):
+		guiones.append ("_")
+	print (guiones)	
+
+
+def intentos (intento):
+	encontrado = False
+	error = False
+	errores = 0
+	for j in range(len(palabra)):
+		if intento == palabra[j]:
+			guiones[j] = letra
+			encontrado = True
+		else:
+			error = True 
+			errores = errores + 1
+			print ("Ingresa una letra: ")
+
+
+def hombresito (errores):
+	mu =[" ———————"  "ǀ" '\n'  "ǀ" '\n'  "ǀ" '\n'  "ǀ" , "(•˛•)" , "―" , "¦" '\n' "¦" ,  "―" , "┘", "└"  ] #Hay que arreglar esto
+	
+	print (mu)
 
 def ahorcado (errores):
 	muere = False
@@ -15,21 +36,10 @@ def ahorcado (errores):
 	else:
 		muere = True
 		return "Perdiste"
+		print ("La palabra era " + palabra)
 		des = int(input("1. Volver a jugar" '\n' "2. Salir"))
-		if des = 1:
-			muere = True
+		if des == 1:
+			muere == False
+			errores = 0
 		else: 
 			print ("Adios ☺")
-def intentos (errores):
-	if intento != letra
-
-def hombresito (errores):
-	mu =[" ———————"  "ǀ" '\n'  "ǀ" '\n'  "ǀ" '\n'  "ǀ" , "(•˛•)" , "¦" '\n' "¦" , "―" , "―" , "┘", "└"  ] 
-	
-	print (mu)
-
-	 ———————
-	ǀ    (•˛•)
-	ǀ     ―¦―
-	ǀ      ¦
-	ǀ     ┘ └

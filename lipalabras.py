@@ -1,4 +1,4 @@
-def lista ()
+def lista ():
 	palabras = [
 		"adolescente",
 		"adulto",

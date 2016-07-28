@@ -1,0 +1,5 @@
+print (" ———————" ) 
+print("ǀ") 
+print("ǀ") 
+print("ǀ") 
+print("ǀ")
