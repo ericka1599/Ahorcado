@@ -1006,64 +1006,70 @@ lista = [
 "rondin",
 "rondis",
 ]
+mu = [
+"""
+  _______
+ |       
+ |
+ | 
+ |""",
 
-mu =[
-" ———————"  
-"ǀ"
-"ǀ"
-"ǀ"
-"ǀ" ,
+"""
+  _______
+ |       |
+ |
+ | 
+ |""",
 
-" ———————"  
-"ǀ      ǀ  "
-"ǀ " 
-"ǀ "
-"ǀ " ,
+"""
+  _______
+ |       |
+ |     (._.)
+ | 
+ |""",
 
-" ———————" 
-"ǀ       ǀ  "
-"ǀ     (•˛•)  " 
-"ǀ "
-"ǀ " , 
+"""
+  _______
+ |       |
+ |     (._.)
+ |       ¦
+ |""",
 
-" ———————"  
-"ǀ       ǀ  "
-"ǀ     (•˛•)  " 
-"ǀ       ¦   " 
-"ǀ       " ,
+"""
+  _______
+ |       |
+ |     (._.)
+ |      -¦
+ |""",
 
-" ———————" 
-"ǀ       ǀ  "
-"ǀ     (•˛•)  " 
-"ǀ      ―¦   " 
-"ǀ      " ,
-
-" ———————" 
-"ǀ       ǀ  " 
-"ǀ     (•˛•)  " 
-"ǀ      ―¦―   "
-"ǀ      ",
-
-" ———————"  
-"ǀ       ǀ  "
-"ǀ     (•˛•)  "
-"ǀ      ―¦―   "
-"ǀ      ┘ " ,
-
-" ———————"  
-"ǀ       ǀ  "
-"ǀ     (•˛•)  "
-"ǀ      ―¦―   "
-"ǀ      ┘ └"
+"""
+  _______
+ |       |
+ |     (._.)
+ |      -¦-
+ |""",
 
 
+"""
+  _______
+ |       |
+ |     (._.)
+ |      -¦-
+ |      /  """,
+
+"""
+  _______
+ |       |
+ |     (._.)
+ |      -¦-
+ |      / \ """
 ] 
 
 
 print ("Hola! Empecemos a jugar")
 while des != 2:
     if des == 1:
-        numero = random.randrange(0 , 3)
+        numero = random.randrange(0 , 1000)
         palabra = lista[numero] 
         guiones = [ ]
         for i in palabra:
@@ -1075,7 +1081,8 @@ while des != 2:
         encontrado = False
         error = False
         errores = 0
-        for j in range(len(palabra)):
+        for j in palabra:
+            palabra = palabra[len(palabra)]
             if intento == palabra[j]:
                 guiones[j] = intento
                 encontrado = True
@@ -1087,7 +1094,7 @@ while des != 2:
                 error = True 
                 errores = errores + 1
                 j = errores - 1
-                print (mu[j])
+                print (mu[0])
 
         muere = False
         while errores < 7:
